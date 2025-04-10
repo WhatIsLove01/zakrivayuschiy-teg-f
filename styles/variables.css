@@ -2,8 +2,8 @@
 :root {
   --second-family: "Press Start 2P", sans-serif;
   --font-family: "Inter", sans-serif;
-  --weight-regular: "wght" 400;
-  --weight-bold: "wght" 700;
+  --weight-regular: 400;
+  --weight-bold: 700;
   --text-color: #000;
   --border-color: #000;
   --stroke-color: #fff;
