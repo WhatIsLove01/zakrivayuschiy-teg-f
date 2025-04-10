@@ -1,1 +1,34 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --second-family: "Press Start 2P", sans-serif;
+  --font-family: "Inter", sans-serif;
+  --weight-regular: "wght" 400;
+  --weight-bold: "wght" 700;
+  --text-color: #000;
+  --border-color: #000;
+  --stroke-color: #fff;
+  --shadow-color: #000;
+  --background-color: #fff;
+  --button-background-hover: #000;
+  --background-image: repeating-linear-gradient(
+      90deg,
+      /* Полоски слева направо */ #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      /* Полоски сверху вниз */ #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(
+      180deg,
+      /* Плавный переход сверху вниз */ #e7e7e7 0.01%,
+      #1a1a1a 100%
+    );
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+}
