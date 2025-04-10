@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="icon" href="./images/favicon.ico" />
     <link rel="icon" href="./svg/favicon.svg" type="images/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
   </head>
   <body class="page">
     <header class="header">
       <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <h2 class="header__subtitle">закрывающий тег</h2>
+      <p class="header__subtitle">закрывающий тег</p>
     </header>
     <main class="main">
       <!--1-->
@@ -25,7 +26,7 @@
         </h2>
         <div class="card__content-image">
           <img
-            class="card__image card__filter-1"
+            class="card__image card__filter-mixed"
             src="./images/card-image.png"
             alt="Пиксельная картинка с изображение автолавкой"
           />
@@ -76,7 +77,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -87,7 +88,7 @@
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__content-image">
           <img
-            class="card__image card__filter-2"
+            class="card__image card__filter-grayscale"
             src="./images/card-image.png"
             alt="Пиксельная картинка с изображение автолавкой"
           />
@@ -140,7 +141,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -151,7 +152,7 @@
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__content-image">
           <img
-            class="card__image card__filter-3"
+            class="card__image card__filter-brightness"
             src="./images/card-image.png"
             alt="Пиксельная картинка с изображение автолавкой"
           />
@@ -202,7 +203,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -213,7 +214,7 @@
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__content-image">
           <img
-            class="card__image card__filter-4"
+            class="card__image card__filter-sepia"
             src="./images/card-image.png"
             alt="Пиксельная картинка с изображение автолавкой"
           />
@@ -266,7 +267,8 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
+              >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -277,7 +279,7 @@
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__content-image">
           <img
-            class="card__image card__filter-5"
+            class="card__image card__filter-invert"
             src="./images/card-image.png"
             alt="Пиксельная картинка с изображение автолавкой"
           />
@@ -331,7 +333,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -342,7 +344,7 @@
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__content-image">
           <img
-            class="card__image card__filter-6"
+            class="card__image card__filter-contrast"
             src="./images/card-image.png"
             alt="Пиксельная картинка с изображение автолавкой"
           />
@@ -393,7 +395,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -404,7 +406,7 @@
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__content-image">
           <img
-            class="card__image card__filter-7"
+            class="card__image card__filter-saturate"
             src="./images/card-image.png"
             alt="Пиксельная картинка с изображение автолавкой"
           />
@@ -457,7 +459,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -468,7 +470,7 @@
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__content-image">
           <img
-            class="card__image card__filter-8"
+            class="card__image card__filter-opacity"
             src="./images/card-image.png"
             alt="Пиксельная картинка с изображение автолавкой"
           />
@@ -523,7 +525,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -533,7 +535,7 @@
       <button
         class="button button__save"
         type="button"
-        onclick="window['window-modal'].showModal();"
+        onclick="window['window-modal'].show();"
       >
         <svg
           class="button_icon"
@@ -546,11 +548,10 @@
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-
       <dialog class="window" id="window-modal">
         <div class="window__content">
           <svg
-            class="button_icon"
+            class="window__button_icon"
             xmlns="http://www.w3.org/2000/svg"
             width="39"
             height="39"
@@ -558,14 +559,14 @@
           >
             <use href="./svg/floppy.svg#disc"></use>
           </svg>
-          <h2 class="window__title">Вставьте дискету, чтобы продолжить</h2>
+          <p class="window__title">Вставьте дискету, чтобы продолжить</p>
         </div>
         <button
           class="button__close button"
           onclick="window['window-modal'].close()"
           type="button"
         >
-          <span class="button__text">ОК</span>
+          <span class="button__text">ок</span>
         </button>
       </dialog>
     </main>

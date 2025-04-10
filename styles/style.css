@@ -28,7 +28,7 @@
   border: 2px solid var(--border-color);
   padding-inline: clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
   padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
-  font-family: var(--second-family);
+  font-family: var(--accent-font);
   text-align: center;
   background-color: var(--background-color);
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
@@ -86,7 +86,7 @@
   top: clamp(1.4375rem, 1.3935rem + 0.1878vw, 1.5625rem);
   right: clamp(0.75rem, 0.4639rem + 1.2207vw, 1.5625rem);
   opacity: 0.5;
-  font-family: var(--second-family);
+  font-family: var(--accent-font);
   font-weight: var(--weight-regular);
   font-size: 14px;
   text-shadow: -1px 0 var(--stroke-color), 0 1px var(--stroke-color),
@@ -121,7 +121,8 @@
 .card__content-button {
   display: flex;
   justify-content: end;
-  margin-block-end: 17px;
+  gap: 4px;
+  margin-block-end: 23px;
 }
 
 .button {
@@ -138,7 +139,7 @@
   position: relative;
   z-index: 1;
   color: var(--background-color);
-  font-family: var(--second-family);
+  font-family: var(--accent-font);
   font-weight: var(--weight-regular);
   font-size: 14px;
   line-height: 90%;
@@ -165,7 +166,9 @@
 }
 
 .card__icon-button {
+  display: flex;
   border: 2px solid transparent;
+  padding: 0;
   background-color: transparent;
   transition: border-color 0.3s ease;
   cursor: pointer;
@@ -177,35 +180,35 @@
   max-block-size: 38px;
 }
 
-.card__filter-1 {
+.card__filter-mixed {
   filter: brightness(0.8) contrast(1.2) grayscale(0.5);
 }
 
-.card__filter-2 {
+.card__filter-grayscale {
   filter: grayscale(0.8);
 }
 
-.card__filter-3 {
+.card__filter-brightness {
   filter: brightness(2);
 }
 
-.card__filter-4 {
+.card__filter-sepia {
   filter: sepia(0.5);
 }
 
-.card__filter-5 {
+.card__filter-invert {
   filter: invert(0.3);
 }
 
-.card__filter-6 {
+.card__filter-contrast {
   filter: contrast(1.5);
 }
 
-.card__filter-7 {
+.card__filter-saturate {
   filter: saturate(2);
 }
 
-.card__filter-8 {
+.card__filter-opacity {
   filter: opacity(0.8);
 }
 
@@ -249,7 +252,7 @@
 }
 
 .window::backdrop {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .window__content {
@@ -260,7 +263,7 @@
 }
 
 .window__title {
-  font-family: var(--second-family);
+  font-family: var(--accent-font);
   font-weight: var(--weight-regular);
   font-size: 14px;
   line-height: 150%;
@@ -274,6 +277,7 @@
 
 .button__close {
   padding: 9px 114.5px;
+  text-transform: uppercase;
 }
 
 @media (width >= 376px) {
